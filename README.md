@@ -6,7 +6,7 @@ AFNetworking+DCTask
 Examples
 ===================
 ### AFHTTPRequestOperation
-```
+```objectivec
     DCTask *task = [AFHTTPRequestOperation dc_request:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.weather.com.cn/data/sk/101010100.html"]]];
     task.thenMain(^(DCTaskHTTPOperationResponse *response){
         NSError *error = nil;
@@ -25,7 +25,7 @@ Examples
 ```
 
 ### AFHTTPRequestOperationManager
-```
+```objectivec
     AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:nil];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
@@ -47,7 +47,7 @@ Examples
 ```
 
 ### AFHTTPSessionManager
-```
+```objectivec
     AFHTTPSessionManager *sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:nil];
     sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
