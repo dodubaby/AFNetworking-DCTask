@@ -14,7 +14,7 @@
 		323339A11A1F49DD00DAD369 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323339A01A1F49DD00DAD369 /* Images.xcassets */; };
 		323339A41A1F49DD00DAD369 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 323339A21A1F49DD00DAD369 /* LaunchScreen.xib */; };
 		323339B01A1F49DD00DAD369 /* AFNetworking_DCTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 323339AF1A1F49DD00DAD369 /* AFNetworking_DCTaskTests.m */; };
-		32C81AF81A22E8370025EB57 /* AFNetworking+DCTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C81AF71A22E8370025EB57 /* AFNetworking+DCTask.m */; };
+		32C81AFE1A22EC7A0025EB57 /* AFNetworking+DCTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C81AFD1A22EC7A0025EB57 /* AFNetworking+DCTask.m */; };
 		3DA4970D23ACF53E604C534C /* libPods-AFNetworking+DCTask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B377D82A9AE20EAC9E211BE1 /* libPods-AFNetworking+DCTask.a */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +42,8 @@
 		323339A91A1F49DD00DAD369 /* AFNetworking+DCTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AFNetworking+DCTaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		323339AE1A1F49DD00DAD369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		323339AF1A1F49DD00DAD369 /* AFNetworking_DCTaskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworking_DCTaskTests.m; sourceTree = "<group>"; };
-		32C81AF61A22E8370025EB57 /* AFNetworking+DCTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFNetworking+DCTask.h"; sourceTree = "<group>"; };
-		32C81AF71A22E8370025EB57 /* AFNetworking+DCTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking+DCTask.m"; sourceTree = "<group>"; };
+		32C81AFC1A22EC7A0025EB57 /* AFNetworking+DCTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFNetworking+DCTask.h"; sourceTree = "<group>"; };
+		32C81AFD1A22EC7A0025EB57 /* AFNetworking+DCTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking+DCTask.m"; sourceTree = "<group>"; };
 		3FA3D821B98624B31CC0FCEA /* Pods-AFNetworking+DCTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworking+DCTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-AFNetworking+DCTask/Pods-AFNetworking+DCTask.release.xcconfig"; sourceTree = "<group>"; };
 		B377D82A9AE20EAC9E211BE1 /* libPods-AFNetworking+DCTask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AFNetworking+DCTask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97C789D795C399107530574 /* Pods-AFNetworking+DCTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworking+DCTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFNetworking+DCTask/Pods-AFNetworking+DCTask.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,7 +91,8 @@
 		323339921A1F49DD00DAD369 /* AFNetworking+DCTask */ = {
 			isa = PBXGroup;
 			children = (
-				32C81AF51A22E82E0025EB57 /* AFNetworking-DCTask */,
+				32C81AFC1A22EC7A0025EB57 /* AFNetworking+DCTask.h */,
+				32C81AFD1A22EC7A0025EB57 /* AFNetworking+DCTask.m */,
 				323339971A1F49DD00DAD369 /* AppDelegate.h */,
 				323339981A1F49DD00DAD369 /* AppDelegate.m */,
 				3233399A1A1F49DD00DAD369 /* ViewController.h */,
@@ -128,15 +129,6 @@
 				323339AE1A1F49DD00DAD369 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		32C81AF51A22E82E0025EB57 /* AFNetworking-DCTask */ = {
-			isa = PBXGroup;
-			children = (
-				32C81AF61A22E8370025EB57 /* AFNetworking+DCTask.h */,
-				32C81AF71A22E8370025EB57 /* AFNetworking+DCTask.m */,
-			);
-			path = "AFNetworking-DCTask";
 			sourceTree = "<group>";
 		};
 		447909CB09C40827438CF917 /* Frameworks */ = {
@@ -291,8 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32C81AF81A22E8370025EB57 /* AFNetworking+DCTask.m in Sources */,
 				3233399C1A1F49DD00DAD369 /* ViewController.m in Sources */,
+				32C81AFE1A22EC7A0025EB57 /* AFNetworking+DCTask.m in Sources */,
 				323339991A1F49DD00DAD369 /* AppDelegate.m in Sources */,
 				323339961A1F49DD00DAD369 /* main.m in Sources */,
 			);
