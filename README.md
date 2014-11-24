@@ -51,7 +51,8 @@ Examples
     AFHTTPSessionManager *sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:nil];
     sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
-    task.thenMain(^(DCTaskHTTPOperationResponse *response){
+    DCTask *task = [sessionManager dc_GET:@"http://www.weather.com.cn/data/sk/101010100.html" parameters:nil];
+    task.thenMain(^(DCTaskHTTPSessionResponse *response){
         NSError *error = nil;
         NSDictionary *weather = [NSJSONSerialization JSONObjectWithData:response.responseObject
                                                                 options:NSJSONReadingMutableContainers
