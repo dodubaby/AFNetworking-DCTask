@@ -8,3 +8,11 @@ Examples
 ### AFHTTPRequestOperation
 ```
 ```
+
+### AFHTTPRequestOperationManager
+```
+```
+
+### AFHTTPSessionManager
+```
+```
